@@ -1,0 +1,196 @@
+{
+  "info": {
+    "_postman_id": "5898e8e5-8a20-440f-9d7b-848c52efb083",
+    "name": "desing patterns",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13442070"
+  },
+  "item": [
+    {
+      "name": "factory",
+      "item": [
+        {
+          "name": "email - notification",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://0.0.0.0:8080/email?msg=He enviado un E-mail.",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "port": "8080",
+              "path": [
+                "email"
+              ],
+              "query": [
+                {
+                  "key": "msg",
+                  "value": "He enviado un E-mail.",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "sms- notification",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://0.0.0.0:8080/sms?msg=He enviado un sms.",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "port": "8080",
+              "path": [
+                "sms"
+              ],
+              "query": [
+                {
+                  "key": "msg",
+                  "value": "He enviado un sms."
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "strategy",
+      "item": [
+        {
+          "name": "es - strategy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://0.0.0.0:8080/es?total=15.25",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "port": "8080",
+              "path": [
+                "es"
+              ],
+              "query": [
+                {
+                  "key": "total",
+                  "value": "15.25"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "mx - strategy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://0.0.0.0:8080/mx?total=10.25",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "port": "8080",
+              "path": [
+                "mx"
+              ],
+              "query": [
+                {
+                  "key": "total",
+                  "value": "10.25"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "singleton",
+      "item": [
+        {
+          "name": "singleton - counter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://0.0.0.0:8080/counter",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "port": "8080",
+              "path": [
+                "counter"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "observer",
+      "item": [
+        {
+          "name": "observer - ordens",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 101,\r\n    \"product\": \"MacBook Pro\",\r\n    \"amount\": 2500.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://0.0.0.0:8080/orders",
+              "protocol": "http",
+              "host": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "port": "8080",
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
